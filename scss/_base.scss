@@ -2,13 +2,17 @@
 
 
 body {
-	color: #333333;
+	color: #0F1A2A;
 	font-family: $font-en;
 	font-size: 100%;
 	-webkit-font-smoothing: antialiased;
 	line-height: 1.4;
 	overflow-x: hidden;
-	padding-bottom: 100000px;
+	background: url("../img/bg.jpg")no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-bottom: 10000px;
 }
 
 a{

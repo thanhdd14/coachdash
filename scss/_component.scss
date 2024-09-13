@@ -73,7 +73,8 @@ Component
 // Common Text style
 .c-txt{
 	&__basic{
-
+		@include fts(18,25.2);
+		font-weight: 500;
 	}
 }
 
@@ -83,7 +84,15 @@ Component
 //ttl
 .c-ttl{
 	&__01{
-
+		display: block;
+		@include fts(40,56);
+		font-weight: bold;
+		margin-bottom: 23px;
+		span{
+			display: inline-block;
+			color: #4047E9;
+			margin: 0 8px;
+		}
 	}
 
 }
@@ -91,7 +100,39 @@ Component
 //btn
 .c-btn{
 	&__01{
-
+		display: inline-block;
+		color: white;
+		@include font-size(18);
+		line-height: 1.4;
+		font-weight: 600;
+		padding: 18px 32px;
+		border-radius: 8px;
+		position: relative;
+		background: rgb(73,102,255);
+		background: linear-gradient(180deg, rgba(73,102,255,1) 0%, rgba(64,71,233,1) 100%);
+		@include smooth-transition;
+		&--arrow{
+			padding: 10px 57px 12px 25px;
+			&:after{
+				content: "";
+				width: 24px;
+				height: 24px;
+				background: url("../img/arrow-right.png")no-repeat;
+				background-size: 100%;
+				position: absolute;
+				@include v-align;
+				right: 25px;
+			}
+		}
+		&:hover{
+			opacity: 1;
+			background: #4047E9;
+			background: linear-gradient(180deg, #4047E9 0%, #4047E9 100%);
+		}
+		&--default{
+			background: none !important;
+			border: 1px solid white !important;
+		}
 	}
 }
 

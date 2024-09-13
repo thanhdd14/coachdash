@@ -1,19 +1,32 @@
 @use "vars" as *;
 
 #header{
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	border-bottom: 1px solid  #7288ff;
 	z-index: 999;
 	padding: 15px 0;
+	@include smooth-transition;
 	.inner{
 		@include flex(between,center,wrap);
 	}
 	.header-logo{
 		display: block;
 		width: 227px;
+		position: relative;
+		img{
+			@include smooth-transition;
+		}
+		.logo-02{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			opacity: 0;
+			visibility: hidden;
+		}
 	}
 	.header-nav{
 		@include mq(tb-min){
@@ -80,7 +93,8 @@
 			&-signup{
 				@include font-size(16);
 				line-height: 1;
-				background: #4F45F8;
+				background: rgb(73,102,255);
+				background: linear-gradient(180deg, rgba(73,102,255,1) 0%, rgba(64,71,233,1) 100%);
 				color: white;
 				padding: 10px 20px;
 				border-radius: 5px;
@@ -146,6 +160,33 @@
 					transform: translateY(0) rotate(-45deg);
 					bottom: -2px;
 				}
+			}
+		}
+	}
+	@include mq(tb-min){
+		&.white{
+			position: fixed;
+			background: white;
+			border-bottom: 1px solid rgba(#7288ff,0.2);
+			.header-logo{
+				.logo-01{
+					opacity: 0;
+					visibility: hidden;
+				}
+				.logo-02{
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+			.header-nav__menu{
+				li{
+					a{
+						color: #0F1A2A;
+					}
+				}
+			}
+			.header-nav__btn-login{
+				background: rgba(#4F45F8,0.1);
 			}
 		}
 	}
