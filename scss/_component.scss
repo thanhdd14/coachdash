@@ -75,6 +75,10 @@ Component
 	&__basic{
 		@include fts(18,25.2);
 		font-weight: 500;
+		@include mq(){
+			@include font-size(14);
+			line-height: 1.6;
+		}
 	}
 }
 
@@ -88,10 +92,16 @@ Component
 		@include fts(40,56);
 		font-weight: bold;
 		margin-bottom: 23px;
+		@include mq(){
+			@include font-size(28);
+		}
 		span{
 			display: inline-block;
 			color: #4047E9;
 			margin: 0 8px;
+			@include mq(){
+				margin: 0 4px;
+			}
 		}
 	}
 
@@ -111,6 +121,10 @@ Component
 		background: rgb(73,102,255);
 		background: linear-gradient(180deg, rgba(73,102,255,1) 0%, rgba(64,71,233,1) 100%);
 		@include smooth-transition;
+		@include mq(){
+			@include font-size(14);
+			padding: 13px 15px;
+		}
 		&--arrow{
 			padding: 10px 57px 12px 25px;
 			&:after{
@@ -122,6 +136,10 @@ Component
 				position: absolute;
 				@include v-align;
 				right: 25px;
+				@include mq(){
+					width: 19px;
+					height: 19px;
+				}
 			}
 		}
 		&:hover{
@@ -132,6 +150,11 @@ Component
 		&--default{
 			background: none !important;
 			border: 1px solid white !important;
+			&:hover{
+				opacity: 1;
+				color: $blue;
+				background: white !important;
+			}
 		}
 	}
 }
@@ -140,17 +163,11 @@ Component
 //fade up
 .js-scrollin {
 	opacity: 0;
-	-webkit-transform: translate(0, 70px);
-	-ms-transform: translate(0, 70px);
-	transform: translate(0, 70px);
-	&.active{
+	visibility: hidden;
+	&.fade{
 		opacity: 1;
-		-webkit-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		transform: translate(0, 0);
-		-webkit-transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-		-o-transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-		transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		visibility: visible;
+		transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 	}
 }
 

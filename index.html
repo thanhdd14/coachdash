@@ -22,25 +22,25 @@
 				<nav class="header-nav">
 					<ul class="header-nav__menu">
 						<li class="header-nav__menu-item">
-							<a href="">Home</a>
+							<a href="#mv" class="js-anchor">Home</a>
 						</li>
 						<li class="header-nav__menu-item">
-							<a href="">Setup</a>
+							<a href="#setup" class="js-anchor">Setup</a>
 						</li>
 						<li class="header-nav__menu-item">
-							<a href="">For Organizations</a>
+							<a href="#ograni" class="js-anchor">For Organizations</a>
 						</li>
 						<li class="header-nav__menu-item">
-							<a href="">Benefits</a>
+							<a href="#benefits" class="js-anchor">Benefits</a>
 						</li>
 						<li class="header-nav__menu-item">
-							<a href="">Security</a>
+							<a href="#security" class="js-anchor">Security</a>
 						</li>
 						<li class="header-nav__menu-item">
-							<a href="">FAQs</a>
+							<a href="#question" class="js-anchor">FAQs</a>
 						</li>
 						<li class="header-nav__menu-item">
-							<a href="">Pricing</a>
+							<a href="#pricing" class="js-anchor">Pricing</a>
 						</li>
 					</ul>
 					<div class="header-nav__accounts">
@@ -49,6 +49,11 @@
 							<a href="" class="header-nav__btn-signup">Sign up</a>
 						</div>
 					</div>
+					<ul class="header-nav__sns">
+						<li><a href="" target="_blank"><img src="./img/icon-19.png" alt="instagram"></a></li>
+						<li><a href="" target="_blank"><img src="./img/icon-20.png" alt="facebook"></a></li>
+						<li><a href="" target="_blank"><img src="./img/icon-21.png" alt=""></a></li>
+					</ul>
 				</nav>
 				<span class="js-mobile">
 					<span></span>
@@ -56,7 +61,7 @@
 			</div>
 		</header>
 		<main class="page-index">
-			<section class="sec-mv">
+			<section class="sec-mv" id="mv">
 				<div class="inner">
 					<div class="mv-heading">
 						<span class="mv-heading__note"> The Ultimate Platform for Coaches </span>
@@ -66,7 +71,7 @@
 						<span class="mv-item__ttl">Unlock Insights, Drive Results</span>
 						<p> Enhance client outcomes and streamline your workflow </p>
 						<div class="mv-item__btn">
-							<a href="" class="mv-item__btn">Get started</a>
+							<a href="" class="mv-item__btn mv-item__btn--default">Get started</a>
 							<a href="" class="mv-item__btn c-bg--white c-fc--blue">Explore the Platform</a>
 						</div>
 						<ul class="mv-item__option">
@@ -81,15 +86,15 @@
 			</section>
 			<section class="sec-setup">
 				<div class="inner">
-					<h2 class="c-ttl__01 c-al--c">
+					<h2 class="c-ttl__01 c-al--c js-scrollin" id="setup">
 						<span>Effortless</span>Setup,<span>Immediate</span>Results </h2>
-					<div class="c-txt__basic c-al--c mbpc-37 mbsp-30">
+					<div class="c-txt__basic c-al--c mbpc-37 mbsp-30 js-scrollin">
 						<p> Getting started with CoachDash is simple and smooth: </p>
 					</div>
 					<div class="setup-block">
 						<div class="setup-block__ct">
 							<ul class="setup-step c-txt__basic">
-								<li class="setup-step__item">
+								<li class="setup-step__item js-scrollin">
 									<span class="setup-step__number"> STEP <span>01</span>
 									</span>
 									<div class="setup-step__ct">
@@ -100,8 +105,11 @@
 											</span> Sync Your Calendar and Log In </h3>
 										<p> With a few clicks, integrate your calendar and access your personalized CoachDash dashboard. </p>
 									</div>
+									<div class="setup-step__ct-img">
+										<img src="./img/setup-01.png" alt="Sync Your Calendar and Log In">
+									</div>
 								</li>
-								<li class="setup-step__item active">
+								<li class="setup-step__item active js-scrollin">
 									<span class="setup-step__number"> STEP <span>02</span>
 									</span>
 									<div class="setup-step__ct">
@@ -112,8 +120,11 @@
 											</span> Let CoachDash Bot Join Your Calls </h3>
 										<p> Our intelligent notetaker seamlessly connects to your scheduled meetings, capturing every detail without interrupting the flow. </p>
 									</div>
+									<div class="setup-step__ct-img">
+										<img src="./img/setup-02.png" alt="Let CoachDash Bot Join Your Calls">
+									</div>
 								</li>
-								<li class="setup-step__item">
+								<li class="setup-step__item js-scrollin">
 									<span class="setup-step__number"> STEP <span>03</span>
 									</span>
 									<div class="setup-step__ct">
@@ -124,11 +135,14 @@
 											</span> Receive Ready-to-Share Reports </h3>
 										<p> Instantly get fully formatted, actionable reports automatically generated and waiting for your approval. </p>
 									</div>
+									<div class="setup-step__ct-img">
+										<img src="./img/setup-03.png" alt="Receive Ready-to-Share Reports">
+									</div>
 								</li>
 							</ul>
-							<a href="" class="c-btn__01"> See CoachDash In Action </a>
+							<a href="" class="c-btn__01 js-scrollin"> See CoachDash In Action </a>
 						</div>
-						<div class="setup-block__img">
+						<div class="setup-block__img js-scrollin">
 							<div class="setup-block__img-item">
 								<img src="./img/setup-01.png" alt="Sync Your Calendar and Log In">
 							</div>
@@ -144,28 +158,28 @@
 			</section>
 			<section class="sec-ograni">
 				<div class="inner">
-					<div class="ograni-block">
-						<div class="ograni-block__img">
+					<div class="ograni-block" id="ograni">
+						<div class="ograni-block__img js-scrollin">
 							<div class="img">
 								<img src="./img/img-04.png" alt="Empowering Internal Coaches for Organizational Growth">
 							</div>
 						</div>
 						<div class="ograni-block__ct c-txt__basic">
-							<h2 class="c-ttl__01"> Empowering Internal Coaches for<span>Organizational Growth</span>
+							<h2 class="c-ttl__01 js-scrollin"> Empowering Internal Coaches for<span>Organizational Growth</span>
 							</h2>
-							<p class="mbpc-43 mbsp-20"> CoachDash is built not only for independent coaches but also for internal coaching teams within organizations. Here’s how it helps: </p>
+							<p class="mbpc-43 mbsp-30 js-scrollin"> CoachDash is built not only for independent coaches but also for internal coaching teams within organizations. Here’s how it helps: </p>
 							<ul class="ograni-list">
-								<li class="ograni-list__item">
+								<li class="ograni-list__item js-scrollin">
 									<img src="./img/icon-07.png" alt="Scalable Coaching for Teams">
 									<h3 class="ograni-list__ttl">Scalable Coaching for Teams</h3>
 									<p> Easily manage multiple coaching engagements across departments with consistent reporting and analytics. </p>
 								</li>
-								<li class="ograni-list__item">
+								<li class="ograni-list__item js-scrollin">
 									<img src="./img/icon-08.png" alt="Alignment with Company Goals">
 									<h3 class="ograni-list__ttl">Alignment with Company Goals</h3>
 									<p> Track progress and measure impact against organizational KPIs. </p>
 								</li>
-								<li class="ograni-list__item">
+								<li class="ograni-list__item js-scrollin">
 									<img src="./img/icon-09.png" alt="Consistency in Reporting">
 									<h3 class="ograni-list__ttl">Consistency in Reporting</h3>
 									<p> Ensure a unified coaching standard with structured, secure reports that maintain confidentiality and are compliant with coaching ethics. </p>
@@ -180,21 +194,21 @@
 				<div class="inner">
 					<div class="change-block">
 						<div class="change-block__ct c-txt__basic">
-							<h2 class="c-ttl__01"> Empowering Coachees for<span>Lasting Change</span>
+							<h2 class="c-ttl__01 js-scrollin"> Empowering Coachees for<span>Lasting Change</span>
 							</h2>
-							<p class="mbpc-43 mbsp-20"> CoachDash benefits coachees by offering: </p>
+							<p class="mbpc-43 mbsp-30 js-scrollin"> CoachDash benefits coachees by offering: </p>
 							<ul class="ograni-list">
-								<li class="ograni-list__item">
+								<li class="ograni-list__item js-scrollin">
 									<img src="./img/icon-10.png" alt="Personalized Feedback">
 									<h3 class="ograni-list__ttl">Personalized Feedback</h3>
 									<p> Coachees receive clear, targeted insights aligned with their development goals. </p>
 								</li>
-								<li class="ograni-list__item">
+								<li class="ograni-list__item js-scrollin">
 									<img src="./img/icon-11.png" alt="Visible Progress">
 									<h3 class="ograni-list__ttl">Visible Progress</h3>
 									<p> Coachees can see their growth over time, leading to increased motivation and engagement. </p>
 								</li>
-								<li class="ograni-list__item">
+								<li class="ograni-list__item js-scrollin">
 									<img src="./img/icon-12.png" alt="Actionable Insights">
 									<h3 class="ograni-list__ttl">Actionable Insights</h3>
 									<p> Coachees gain practical takeaways that drive meaningful change in both personal and professional spheres. </p>
@@ -202,7 +216,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="change-block__img">
+						<div class="change-block__img js-scrollin">
 							<div class="img">
 								<img src="./img/img-05.png" alt="Empowering Internal Coaches for Organizational Growth">
 							</div>
@@ -212,63 +226,63 @@
 			</section>
 			<section class="sec-unlock">
 				<div class="inner">
-					<h2 class="c-ttl__01 c-al--c"> Unlock the<span>Full Potential</span>of<br> Your Coaching Practice </h2>
-					<div class="c-txt__basic c-al--c mbpc-25 mbsp-25">
+					<h2 class="c-ttl__01 c-al--c js-scrollin" id="benefits"> Unlock the<br class="sp-sm"><span>Full Potential</span>of<br> Your Coaching Practice </h2>
+					<div class="c-txt__basic c-al--c mbpc-25 mbsp-25 js-scrollin">
 						<p> What could you achieve with CoachDash? </p>
 					</div>
 					<div class="unlock-block">
 						<div class="unlock-block__item">
-							<div class="unlock-block__note c-txt__basic">
-								<img src="./img/icon-07.png" alt="Strengthen Client Relationships">
-								<h3 class="unlock-block__note-ttl">Strengthen Client Relationships</h3>
+							<div class="unlock-block__note c-txt__basic js-scrollin">
+								<h3 class="unlock-block__note-ttl">
+									<span class="unlock-block__note-ttl--icon"><img src="./img/icon-07.png" alt="Strengthen Client Relationships"></span> Strengthen Client Relationships </h3>
 								<p> Research shows that the coaching relationship is the #1 predictor of positive outcomes. </p>
 							</div>
-							<div class="unlock-block__note c-txt__basic">
-								<img src="./img/icon-13.png" alt="Boost Your Productivity">
-								<h3 class="unlock-block__note-ttl">Boost Your Productivity</h3>
+							<div class="unlock-block__note c-txt__basic js-scrollin">
+								<h3 class="unlock-block__note-ttl">
+									<span class="unlock-block__note-ttl--icon"><img src="./img/icon-13.png" alt="Boost Your Productivity"></span> Boost Your Productivity </h3>
 								<p> Spend more time coaching, less time on admin. </p>
 							</div>
 						</div>
-						<div class="unlock-block__img">
+						<div class="unlock-block__img js-scrollin">
 							<img src="./img/img-06.png" alt="Unlock the Full Potential of Your Coaching Practice">
 						</div>
 						<div class="unlock-block__item">
-							<div class="unlock-block__note c-txt__basic">
-								<img src="./img/icon-11.png" alt="Track Progress Objectively">
-								<h3 class="unlock-block__note-ttl">Track Progress Objectively</h3>
+							<div class="unlock-block__note c-txt__basic js-scrollin">
+								<h3 class="unlock-block__note-ttl">
+									<span class="unlock-block__note-ttl--icon"><img src="./img/icon-11.png" alt="Track Progress Objectively"></span> Track Progress Objectively </h3>
 								<p> Measure growth with research-backed metrics. </p>
 							</div>
-							<div class="unlock-block__note c-txt__basic">
-								<img src="./img/icon-14.png" alt="Demonstrate Your Impact">
-								<h3 class="unlock-block__note-ttl">Demonstrate Your Impact</h3>
+							<div class="unlock-block__note c-txt__basic js-scrollin">
+								<h3 class="unlock-block__note-ttl">
+									<span class="unlock-block__note-ttl--icon"><img src="./img/icon-14.png" alt="Demonstrate Your Impact"></span> Demonstrate Your Impact </h3>
 								<p> Generate professional reports to showcase your value to clients and organizations. </p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="sec-security">
+			<section class="sec-security" id="security">
 				<div class="inner">
-					<div class="security-heading c-txt__basic c-al--c">
+					<div class="security-heading c-txt__basic c-al--c js-scrollin">
 						<img src="./img/icon-15.png" alt="Your security is our #1 priority">
-						<h2 class="c-ttl__01">Your security is our #1 priority</h2>
+						<h2 class="c-ttl__01">Your security is our<br class="sp-sm">#1 priority</h2>
 						<p> We enforce robust security policies to ensure your account is always safe </p>
 						<a href="" class="c-btn__01 c-btn__01--default">Learn more about our security policies</a>
 					</div>
 					<ul class="security-list c-txt__basic">
-						<li class="security-list__item">
+						<li class="security-list__item js-scrollin">
 							<div class="security-list__box">
 								<img src="./img/icon-16.png" alt="Privacy and Security is part of our DNA">
 								<p> Privacy and Security is part of our DNA </p>
 							</div>
 						</li>
-						<li class="security-list__item">
+						<li class="security-list__item js-scrollin">
 							<div class="security-list__box">
 								<img src="./img/icon-17.png" alt="Industry-leading security measures in place to ensure confidentiality.">
 								<p> Industry-leading security measures in place to ensure confidentiality. </p>
 							</div>
 						</li>
-						<li class="security-list__item">
+						<li class="security-list__item js-scrollin">
 							<div class="security-list__box">
 								<img src="./img/icon-18.png" alt="Trusted by leading coaching experts and organizations.">
 								<p> Trusted by leading coaching experts and organizations. </p>
@@ -277,10 +291,10 @@
 					</ul>
 				</div>
 			</section>
-			<section class="sec-question">
+			<section class="sec-question" id="question">
 				<div class="inner">
 					<div class="question-block">
-						<div class="question-block__heading c-txt__basic">
+						<div class="question-block__heading c-txt__basic js-scrollin">
 							<h2 class="c-ttl__01"> Have Questions?<br class="pc">We Have<span>Answers</span>
 							</h2>
 							<p> Want to know more? You can email us anytime at<a href="mailto:support@coachdash.com">support@coachdash.com.</a>
@@ -288,27 +302,27 @@
 							<a href="" class="c-btn__01">Contact Support</a>
 						</div>
 						<div class="question-block__ct c-txt__basic">
-							<dl class="question-block__ct-item">
+							<dl class="question-block__ct-item js-scrollin">
 								<dt> What is CoachDash? </dt>
 								<dd> Yes! By providing data-driven insights and professional reports, CoachDash helps you demonstrate your value to clients and organizations. This can lead to increased client retention and referrals, ultimately growing your coaching practice. </dd>
 							</dl>
-							<dl class="question-block__ct-item">
+							<dl class="question-block__ct-item js-scrollin">
 								<dt> How does CoachDash improve coaching outcomes? </dt>
 								<dd> Yes! By providing data-driven insights and professional reports, CoachDash helps you demonstrate your value to clients and organizations. This can lead to increased client retention and referrals, ultimately growing your coaching practice. </dd>
 							</dl>
-							<dl class="question-block__ct-item">
+							<dl class="question-block__ct-item js-scrollin">
 								<dt> Is my data secure on CoachDash? </dt>
 								<dd> Yes! By providing data-driven insights and professional reports, CoachDash helps you demonstrate your value to clients and organizations. This can lead to increased client retention and referrals, ultimately growing your coaching practice. </dd>
 							</dl>
-							<dl class="question-block__ct-item">
+							<dl class="question-block__ct-item js-scrollin">
 								<dt> What kind of reports can I generate with CoachDash? </dt>
 								<dd> Yes! By providing data-driven insights and professional reports, CoachDash helps you demonstrate your value to clients and organizations. This can lead to increased client retention and referrals, ultimately growing your coaching practice. </dd>
 							</dl>
-							<dl class="question-block__ct-item">
+							<dl class="question-block__ct-item js-scrollin">
 								<dt> How does CoachDash integrate with my existing tools? </dt>
 								<dd> Yes! By providing data-driven insights and professional reports, CoachDash helps you demonstrate your value to clients and organizations. This can lead to increased client retention and referrals, ultimately growing your coaching practice. </dd>
 							</dl>
-							<dl class="question-block__ct-item">
+							<dl class="question-block__ct-item js-scrollin">
 								<dt> Can CoachDash help me grow my coaching business? </dt>
 								<dd> Yes! By providing data-driven insights and professional reports, CoachDash helps you demonstrate your value to clients and organizations. This can lead to increased client retention and referrals, ultimately growing your coaching practice. </dd>
 							</dl>
@@ -316,10 +330,92 @@
 					</div>
 				</div>
 			</section>
+			<section class="sec-pricing" id="pricing">
+				<div class="inner">
+					<h2 class="c-ttl__01 c-al--c js-scrollin">Pricing</h2>
+					<div class="c-txt__basic c-al--c mbpc-46 mbsp-25 js-scrollin">
+						<p> We are totally transparent on pricing with you - no sneaky fees now or ever. </p>
+					</div>
+					<div class="pricing-block c-txt__basic">
+						<div class="pricing-block__item js-scrollin">
+							<h3 class="pricing-block__ttl">All-Inclusive MVP Package</h3>
+							<p> Get full access to all features during our special launch period for individual coaches. Limited time offer! </p>
+							<div class="pricing-block__price"> $159<small>/Month</small>
+							</div>
+							<a href="" class="c-btn__01 c-btn__01--arrow">Get Started</a>
+							<ul class="pricing-block__note">
+								<li>All core features</li>
+								<li>Advanced coaching analysis</li>
+								<li>Unlimited clients</li>
+								<li>Seamless integrations with all major conferencing platforms</li>
+								<li>Customizable reports</li>
+								<li>Ongoing updates and improvements</li>
+							</ul>
+						</div>
+						<div class="pricing-block__item js-scrollin">
+							<h3 class="pricing-block__ttl">Enterprise Solutions</h3>
+							<p> Tailored packages for organizations with advanced needs. Contact us for a custom quote. </p>
+							<div class="pricing-block__price"> Custom Pricing </div>
+							<a href="" class="c-btn__01 c-btn__01--arrow">Schedule a Consultation</a>
+							<ul class="pricing-block__note">
+								<li>All of the MVP features</li>
+								<li>Custom deployment and integration support</li>
+								<li>Dedicated account management</li>
+								<li>Enhanced security and compliance features</li>
+								<li>Multi-user team collaboration tools</li>
+								<li>Priority customer support and SLAs</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
-		<footer id="footer">
+		<footer id="footer" class="c-txt__basic">
 			<div class="inner">
+				<div class="footer-note">
+					<a href="./" class="footer-logo">
+						<img src="./img/logo-blue.png" alt="CoachDash">
+					</a>
+					<p> The above images are for illustrative purposes only and is designed to help visualize the benefits of our services. The benefits mentioned or implied within these visuals do not necessarily represent current product, as they are subject to UI changes. For the most up-to-date information, please refer to the CoachDash app. </p>
+				</div>
+				<div class="footer-menu">
+					<span class="footer-ttl">QUICK LINKS</span>
+					<ul>
+						<li>
+							<a href="#mv" class="js-anchor">Home</a>
+						</li>
+						<li>
+							<a href="#benefits" class="js-anchor">Benefits</a>
+						</li>
+						<li>
+							<a href="#setup" class="js-anchor">Setup</a>
+						</li>
+						<li>
+							<a href="#security" class="js-anchor">Security</a>
+						</li>
+						<li>
+							<a href="#ograni" class="js-anchor">For Organizations</a>
+						</li>
+						<li>
+							<a href="#question" class="js-anchor">FAQs</a>
+						</li>
+						<li>
+							<a href="#pricing" class="js-anchor">Pricing</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-contact">
+					<span class="footer-ttl">QUICK LINKS</span>
+					<a href="mailto:support@coachdash.com">support@coachdash.com</a>
+					<span class="footer-ttl">FOLLOW US</span>
+					<ul class="footer-sns">
+						<li><a href="" target="_blank"><img src="./img/icon-19.png" alt="instagram"></a></li>
+						<li><a href="" target="_blank"><img src="./img/icon-20.png" alt="facebook"></a></li>
+						<li><a href="" target="_blank"><img src="./img/icon-21.png" alt=""></a></li>
+					</ul>
+				</div>
 			</div>
+			<div class="copyright c-al--c"> Copyright © 2024 CoachDash. All Rights Reserved. </div>
 		</footer>
 		<script src="./js/jquery-3.6.0.min.js"></script>
 		<script src="./js/slick.min.js"></script>

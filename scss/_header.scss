@@ -9,6 +9,11 @@
 	z-index: 999;
 	padding: 15px 0;
 	@include smooth-transition;
+	@include mq(tb){
+		position: fixed;
+		background: white;
+		padding: 10px 0 6px;
+	}
 	.inner{
 		@include flex(between,center,wrap);
 	}
@@ -16,6 +21,10 @@
 		display: block;
 		width: 227px;
 		position: relative;
+		z-index: 999;
+		@include mq(tb){
+			width: 180px;
+		}
 		img{
 			@include smooth-transition;
 		}
@@ -26,6 +35,16 @@
 			right: 0;
 			opacity: 0;
 			visibility: hidden;
+			@include mq(tb){
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		.img-01{
+			@include mq(tb){
+				opacity: 0;
+				visibility: hidden;
+			}
 		}
 	}
 	.header-nav{
@@ -34,6 +53,8 @@
 			display: flex !important;
 			align-items: center;
 			justify-content: flex-end;
+			transition: all 0s ease !important;
+			opacity: 1 !important;
 		}
 		@include mq(tb){
 			display: none;
@@ -42,8 +63,9 @@
 			left: 0;
 			right: 0;
 			height: 100vh;
-			padding: 60px 20px 0;
+			padding: 60px 15px;
 			overflow-y: scroll;
+			background: white;
 			&.active{
 				display: block;
 			}
@@ -66,6 +88,13 @@
 					@include font-size(18);
 					font-weight: 500;
 					color: white;
+					@include mq(tb){
+						color: $blue;
+					}
+					&:hover{
+						opacity: 1;
+						color: #4F45F8 !important;
+					}
 				}
 			}
 		}
@@ -73,6 +102,12 @@
 			@include flex(end,center,center);
 			width: 195px;
 			margin-left: 30px;
+			@include mq(tb){
+				width: 100%;
+				margin: 0;
+				padding: 15px;
+				justify-content: center;
+			}
 			a{
 				margin-right: 10px;
 				&:last-child{
@@ -81,18 +116,28 @@
 			}
 		}
 		&__btn{
+			@include flex(between,0,0);
+			@include mq(tb){
+				padding: 15px 0;
+			}
 			&-login{
 				@include font-size(16);
+				text-align: center;
 				line-height: 1;
 				font-weight: 600;
 				background: white;
 				color: #4F45F8;
 				padding: 10px 20px;
 				border-radius: 5px;
+				height: 100%;
+				@include mq(tb){
+					border: 1px solid $blue;
+				}
 			}
 			&-signup{
 				@include font-size(16);
 				line-height: 1;
+				text-align: center;
 				background: rgb(73,102,255);
 				background: linear-gradient(180deg, rgba(73,102,255,1) 0%, rgba(64,71,233,1) 100%);
 				color: white;
@@ -100,9 +145,21 @@
 				border-radius: 5px;
 			}
 		}
+		&__sns{
+			display: none;
+			@include mq(tb){
+				@include flex(center,center,wrap);
+				li{
+					margin: 0 10px;
+					img{
+						width: 40px;
+					}
+				}
+			}
+		}
 	}
 	.js-mobile {
-		width: 26px;
+		width: 30px;
 		height: 30px;
 		position: absolute;
 		right: 20px;
@@ -119,14 +176,14 @@
 			display: block;
 			width: 100%;
 			height: 2px;
-			background: #333;
+			background: $blue;
 			border-radius: 3px;
 			&:before,&:after{
 				position: absolute;
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background: #333;
+				background: $blue;
 				content: '';
 				-webkit-transition: -webkit-transform 0.3s;
 				transition: transform 0.3s;
@@ -135,12 +192,12 @@
 			&:before{
 				-webkit-transform: translateY(-250%);
 				transform: translateY(-250%);
-				top: -6px;
+				top: -3px;
 			}
 			&:after{
 				-webkit-transform: translateY(250%);
 				transform: translateY(250%);
-				bottom: -6px;
+				bottom: -3px;
 			}
 		}
 		&--close {
@@ -148,7 +205,7 @@
 				background-color: transparent;
 				&:before,&:after{
 					width: 100%;
-					background: #333;
+					background: $blue;
 				}
 				&:before {
 					-webkit-transform: translateY(0) rotate(45deg);
