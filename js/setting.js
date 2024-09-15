@@ -16,17 +16,49 @@ jQuery(document).ready(function ($) {
         }
     });
 });
-$(function () {
-    $(".setup-step .setup-step__item").click(function () {
-        var num = $(".setup-step .setup-step__item").index(this);
-        $('.setup-step__ct-img').removeClass('active');
-        $(".setup-block__img .setup-block__img-item").removeClass('active');
-        $(".setup-block__img .setup-block__img-item").eq(num).addClass('active');
-        $(".setup-step .setup-step__item").removeClass('active');
-        $(this).addClass('active');
-        $(this).find('.setup-step__ct-img').addClass('active');
-    });
+
+
+$(document).ready(function() {
+    if($(window).width()>834){
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav',
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 7000,
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            focusOnSelect: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 7000,
+        });
+    }
+    else{
+        $(function () {
+            $(".setup-step .setup-step__item").click(function () {
+                var num = $(".setup-step .setup-step__item").index(this);
+                $('.setup-step__ct-img').removeClass('active');
+                $(".setup-block__img .setup-block__img-item").removeClass('active');
+                $(".setup-block__img .setup-block__img-item").eq(num).addClass('active');
+                $(".setup-step .setup-step__item").removeClass('active');
+                $(this).addClass('active');
+                $(this).find('.setup-step__ct-img').addClass('active');
+            });
+        });
+    }
 });
+
+
+
+
 
 $('.question-block__ct-item').on('click', function(){
     $(this).toggleClass("active");
@@ -47,10 +79,14 @@ $(window).on('scroll load assessFeatureHeaders', function(){
 });
 
 
-function load() {
-    document.body.classList.add('is-hello');
-}
-window.onload = load;
+// function load() {
+//     document.body.classList.add('is-hello');
+// }
+// window.onload = load;
+
+setTimeout(function () {
+    $("body").addClass("is-hello");
+},500);
 
 
 $(function () {
@@ -73,4 +109,26 @@ $(function () {
         $(".header-nav").fadeOut();
         e.preventDefault();
     });
+});
+
+
+
+//resize slider load page
+var window_type;
+var $window = $(window);
+if ($window.width() <= 835) {
+    window_type = 'sp';
+} else {
+    window_type = 'pc';
+}
+$(window).resize(function() {
+    if($window.width() <= 835){
+        if( (window_type != 'sp') ){
+            location.reload();
+        }
+    }else{
+        if(window_type != 'pc'){
+            location.reload();
+        }
+    }
 });
