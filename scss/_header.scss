@@ -78,7 +78,7 @@
 				display: block;
 			}
 			&-item{
-				padding: 11px 17px;
+				padding: 11px 7px;
 				position: relative;
 				@include mq(tb){
 					border-bottom: 1px solid #ccc;
@@ -88,12 +88,18 @@
 					@include font-size(18);
 					font-weight: 500;
 					color: white;
+					padding: 6px 10px;
+					border-radius: 5px;
 					@include mq(tb){
 						color: $blue;
 					}
 					&:hover{
 						opacity: 1;
 						color: #4F45F8 !important;
+						background: white;
+					}
+					@include mq(tb-min){
+
 					}
 				}
 			}
@@ -239,6 +245,11 @@
 				li{
 					a{
 						color: #0F1A2A;
+						&:hover{
+							color: white !important;
+							background: -o-linear-gradient(top, #4966ff 0%, #4047e9 100%);
+							background: linear-gradient(180deg, #4966ff 0%, #4047e9 100%);
+						}
 					}
 				}
 			}

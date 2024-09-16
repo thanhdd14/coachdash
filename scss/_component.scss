@@ -94,6 +94,7 @@ Component
 		margin-bottom: 23px;
 		@include mq(){
 			@include font-size(28);
+			text-align: center;
 		}
 		span{
 			display: inline-block;
