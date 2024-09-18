@@ -75,6 +75,9 @@ Component
 	&__basic{
 		@include fts(18,25.2);
 		font-weight: 500;
+		@include mq(mac){
+			@include font-size(16);
+		}
 		@include mq(){
 			@include font-size(14);
 			line-height: 1.6;
@@ -91,10 +94,11 @@ Component
 		display: block;
 		@include fts(40,56);
 		font-weight: bold;
-		margin-bottom: 23px;
+		margin-bottom: 35px;
 		@include mq(){
 			@include font-size(28);
 			text-align: center;
+			margin-bottom: 25px;
 		}
 		span{
 			display: inline-block;
@@ -113,7 +117,7 @@ Component
 	&__01{
 		display: inline-block;
 		color: white;
-		@include font-size(18);
+		font-size: clamp(1.4rem,0.9375vw,1.8rem);
 		line-height: 1.4;
 		font-weight: 600;
 		padding: 18px 32px;

@@ -1292,6 +1292,11 @@ Component
   line-height: 1.4;
   font-weight: 500;
 }
+@media screen and (max-width: 1600px) {
+  .c-txt__basic {
+    font-size: 1.6rem;
+  }
+}
 @media screen and (max-width: 834px) {
   .c-txt__basic {
     font-size: 1.4rem;
@@ -1304,12 +1309,13 @@ Component
   font-size: 4rem;
   line-height: 1.4;
   font-weight: bold;
-  margin-bottom: 23px;
+  margin-bottom: 35px;
 }
 @media screen and (max-width: 834px) {
   .c-ttl__01 {
     font-size: 2.8rem;
     text-align: center;
+    margin-bottom: 25px;
   }
 }
 .c-ttl__01 span {
@@ -1326,7 +1332,7 @@ Component
 .c-btn__01 {
   display: inline-block;
   color: white;
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, 0.9375vw, 1.8rem);
   line-height: 1.4;
   font-weight: 600;
   padding: 18px 32px;
@@ -2061,6 +2067,11 @@ textarea.form-control {
   text-align: center;
   padding: 160px 0 0;
 }
+@media screen and (max-width: 1600px) {
+  .sec-mv {
+    padding: 130px 0 0;
+  }
+}
 .sec-mv .inner {
   max-width: 1350px;
   position: relative;
@@ -2071,6 +2082,11 @@ textarea.form-control {
   display: block;
   margin-bottom: 29px;
 }
+@media screen and (max-width: 1600px) {
+  .mv-heading {
+    margin-bottom: 20px;
+  }
+}
 .mv-heading__note {
   display: inline-block;
   font-size: 1.8rem;
@@ -2080,6 +2096,11 @@ textarea.form-control {
   padding: 10px 57px;
   border-radius: 30px;
   margin-bottom: 24px;
+}
+@media screen and (max-width: 1600px) {
+  .mv-heading__note {
+    font-size: 1.6rem;
+  }
 }
 @media screen and (max-width: 834px) {
   .mv-heading__note {
@@ -2123,9 +2144,8 @@ textarea.form-control {
 }
 .mv-heading__ttl {
   display: block;
-  font-size: clamp(26px, 3.125vw, 60px);
+  font-size: clamp(26px, 2.9vw, 60px);
   font-weight: bold;
-  line-height: 1.5;
   letter-spacing: 0.5px;
 }
 @media screen and (max-width: 834px) {
@@ -2135,7 +2155,7 @@ textarea.form-control {
 }
 
 .mv-item {
-  font-size: 2.4rem;
+  font-size: clamp(1.6rem, 1.25vw, 2.4rem);
   font-weight: 600;
   margin-bottom: 19px;
 }
@@ -2147,6 +2167,11 @@ textarea.form-control {
 .mv-item p {
   margin-bottom: 31px;
 }
+@media screen and (max-width: 1600px) {
+  .mv-item p {
+    margin-bottom: 20px;
+  }
+}
 @media screen and (max-width: 834px) {
   .mv-item p {
     margin-bottom: 20px;
@@ -2156,10 +2181,18 @@ textarea.form-control {
   display: inline-block;
   position: relative;
   font-size: 2rem;
+  font-size: clamp(1.4rem, 1.041vw, 2rem);
   text-transform: uppercase;
   font-weight: 500;
   padding: 0 130px;
   margin-bottom: 41px;
+}
+@media screen and (max-width: 1600px) {
+  .mv-item__ttl {
+    padding: 0 90px;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 834px) {
   .mv-item__ttl {
@@ -2173,6 +2206,11 @@ textarea.form-control {
   height: 2px;
   position: absolute;
   bottom: 6px;
+}
+@media screen and (max-width: 1600px) {
+  .mv-item__ttl:before, .mv-item__ttl:after {
+    width: 80px;
+  }
 }
 @media screen and (max-width: 834px) {
   .mv-item__ttl:before, .mv-item__ttl:after {
@@ -2203,7 +2241,7 @@ textarea.form-control {
   flex-wrap: wrap;
   margin-bottom: 66px;
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 1600px) {
   .mv-item__btn {
     margin-bottom: 30px;
   }
@@ -2222,9 +2260,9 @@ textarea.form-control {
   flex-wrap: wrap;
   text-align: center;
   color: white;
-  width: 240px;
-  height: 60px;
-  font-size: 1.8rem;
+  width: clamp(160px, 12.5vw, 240px);
+  height: clamp(46px, 3.125vw, 60px);
+  font-size: clamp(1.4rem, 0.9375vw, 1.8rem);
   font-weight: 600;
   border-radius: 8px;
   margin: 0 15px;
@@ -2258,6 +2296,11 @@ textarea.form-control {
   font-size: 1.8rem;
   font-weight: bold;
 }
+@media screen and (max-width: 1600px) {
+  .mv-item__option {
+    font-size: 1.6rem;
+  }
+}
 @media screen and (max-width: 640px) {
   .mv-item__option {
     font-size: 1.4rem;
@@ -2282,6 +2325,11 @@ textarea.form-control {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 0;
+}
+@media screen and (max-width: 1600px) {
+  .mv-item__option li img {
+    width: 20px;
+  }
 }
 @media screen and (max-width: 834px) {
   .mv-item__option li img {
@@ -2577,7 +2625,12 @@ textarea.form-control {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-bottom: 47px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 834px) {
+  .ograni-block {
+    margin-bottom: 50px;
+  }
 }
 .ograni-block__img {
   width: 51.5%;
@@ -2589,7 +2642,7 @@ textarea.form-control {
   }
 }
 .ograni-block__img .img {
-  padding: 40px 0 0 0;
+  padding: 40px 15px 0 0;
   margin: 0 0 0 -29%;
   position: relative;
 }
